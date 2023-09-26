@@ -1,0 +1,23 @@
+{
+  "name": "Evaluation-3-Studi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonia1309/Evaluation-3-Studi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonia1309/Evaluation-3-Studi/issues"
+  },
+  "homepage": "https://github.com/antonia1309/Evaluation-3-Studi#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
