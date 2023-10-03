@@ -1,4 +1,21 @@
 ---
+title: Contact
+metaDescription: Charles Cantin, photographe, vous pouvez me joindre facilement pour tous renseignements
 layout: layout.njk
+backgroundClass: contactPage
 ---
-<h1> Contactez-moi </h1>
+<div>
+  <h1 class="contactTitle"> Contactez-moi </h1>
+    <form>
+      <label for="name">Votre nom</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+      
+      <label for="email">Votre email</label>
+      <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+      
+      <label for="message">Votre message</label>
+      <textarea rows="10" id="message" name="message" placeholder="Votre message ici" required></textarea>
+      
+      <button type="submit" class="#">Envoyer</button>
+    </form>
+  </div>

@@ -1,4 +1,110 @@
 ---
+title: Galerie
+metaDescription: Charles Cantin, photogrpahe, mon portfolio
 layout: layout.njk
+backgroundClass: galeriePage
+votre_galerie:
+- categorie:
+  - baptême
+  photo: "/assets/bapteme-1.jpg"
+- categorie:
+  - baptême
+  photo: "/assets/bapteme-2.jpg"
+- categorie:
+  - baptême
+  photo: "/assets/bapteme-3.jpg"
+- categorie:
+  - bebe
+  photo: "/assets/bebe-1.jpg"
+- categorie:
+  - bebe
+  photo: "/assets/bebe-2.jpg"
+- categorie:
+  - bebe
+  photo: "/assets/bebe-3.jpg"
+- categorie:
+  - bebe
+  photo: "/assets/bebe-4.jpg"
+- categorie:
+  - couple
+  photo: "/assets/couple-1.jpg"
+- categorie:
+  - couple
+  photo: "/assets/couple-2.jpg"
+- categorie:
+  - couple
+  photo: "/assets/couple-3.jpg"
+- categorie:
+  - famille
+  photo: "/assets/famille-1.jpg"
+- categorie:
+  - famille
+  photo: "/assets/famille-2.jpg"
+- categorie:
+  - famille
+  photo: "/assets/famille-3.jpg"
+- categorie:
+  - famille
+  photo: "/assets/famille-4.jpg"
+- categorie:
+  - mariage
+  photo: "/assets/mariage-1.jpg"
+- categorie:
+  - mariage
+  photo: "/assets/mariage-2.jpg"
+- categorie:
+  - mariage
+  photo: "/assets/mariage-3.jpg"
+- categorie:
+  - mariage
+  photo: "/assets/mariage-4.jpg"
+- categorie:
+  - portrait
+  photo: "/assets/portrait-1.jpg"
+- categorie:
+  - portrait
+  photo: "/assets/portrait-2.jpg"
+- categorie:
+  - portrait
+  photo: "/assets/portrait-3.jpg"
+- categorie:
+  - portrait
+  photo: "/assets/portrait-4.jpg"
 ---
-<h1> Galerie photos </h1>
+<div>
+  <h1 class="galerieTitle"> Galerie photos </h1>
+    <div class="items" >
+      <span class="item active" id="tout">Tout</span>
+      <span class="item" id="mariage">Mariage</span>
+      <span class="item" id="famille">Famille</span>
+      <span class="item" id="bebe">Bebe</span>
+      <span class="item" id="couple">Couple</span>
+      <span class="item" id="baptême">Baptême</span>
+      <span class="item" id="grossesse">Grossesse</span>
+      <span class="item" id="portrait">Portrait</span>
+    </div>
+    <div class="photos">
+      <img class="photo {{votre_galerie[0].categorie}}" src="{{votre_galerie[0].photo}}" alt="photo" >
+      <img class="photo {{votre_galerie[1].categorie}}" src="{{votre_galerie[1].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[2].categorie}}" src="{{votre_galerie[2].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[3].categorie}}" src="{{votre_galerie[3].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[4].categorie}}" src="{{votre_galerie[4].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[5].categorie}}" src="{{votre_galerie[5].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[6].categorie}}" src="{{votre_galerie[6].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[7].categorie}}" src="{{votre_galerie[7].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[8].categorie}}" src="{{votre_galerie[8].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[9].categorie}}" src="{{votre_galerie[9].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[10].categorie}}" src="{{votre_galerie[10].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[11].categorie}}" src="{{votre_galerie[11].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[12].categorie}}" src="{{votre_galerie[12].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[13].categorie}}" src="{{votre_galerie[13].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[14].categorie}}" src="{{votre_galerie[14].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[15].categorie}}" src="{{votre_galerie[15].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[16].categorie}}" src="{{votre_galerie[16].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[17].categorie}}" src="{{votre_galerie[17].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[18].categorie}}" src="{{votre_galerie[18].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[19].categorie}}" src="{{votre_galerie[19].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[20].categorie}}" src="{{votre_galerie[20].photo}}" alt="photo">
+      <img class="photo {{votre_galerie[21].categorie}}" src="{{votre_galerie[21].photo}}" alt="photo">
+    </div>
+</div>
