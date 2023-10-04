@@ -1,6 +1,6 @@
 ---
 title: Galerie
-metaDescription: Charles Cantin, photogrpahe, mon portfolio
+metaDescription: Charles Cantin, photographe, mon portfolio
 layout: layout.njk
 backgroundClass: galeriePage
 votre_galerie:
@@ -73,16 +73,16 @@ votre_galerie:
 ---
 <div>
   <h1 class="galerieTitle"> Galerie photos </h1>
-    <div class="items" >
-      <span class="item active" id="tout">Tout</span>
-      <span class="item" id="mariage">Mariage</span>
-      <span class="item" id="famille">Famille</span>
-      <span class="item" id="bebe">Bebe</span>
-      <span class="item" id="couple">Couple</span>
-      <span class="item" id="baptême">Baptême</span>
-      <span class="item" id="grossesse">Grossesse</span>
-      <span class="item" id="portrait">Portrait</span>
-    </div>
+    <ul class="items" >
+      <li class="item active" id="tout">Tout</li>
+      <li class="item" id="mariage">Mariage</li>
+      <li class="item" id="famille">Famille</li>
+      <li class="item" id="bebe">Bebe</li>
+      <li class="item" id="couple">Couple</li>
+      <li class="item" id="baptême">Baptême</li>
+      <li class="item" id="grossesse">Grossesse</li>
+      <li class="item" id="portrait">Portrait</li>
+    </ul>
     <div class="photos">
       <img class="photo {{votre_galerie[0].categorie}}" src="{{votre_galerie[0].photo}}" alt="photo" >
       <img class="photo {{votre_galerie[1].categorie}}" src="{{votre_galerie[1].photo}}" alt="photo">
