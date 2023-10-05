@@ -49,21 +49,27 @@
     </nav>
 </header>
 
-    <div class="form">
-  <h1 class="contactTitle"> Contactez-moi </h1>
-  <form>
-    <label for="name">Votre nom</label>
-    <input type="text" id="name" name="name" placeholder="Votre nom" required>
-    
-    <label for="email">Votre email</label>
-    <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
-    
-    <label for="message">Votre message</label>
-    <textarea rows="10" id="message" name="message" placeholder="Votre message ici" required></textarea>
-    
-    <button type="submit" class="#">Envoyer</button>
-  </form>
-</div>
+    <h1 class="contactTitle"> Contactez-moi </h1>
+  <div class="contactContent">
+    <form>
+      <div class="contactItem">
+        <label for="name">Votre nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+      </div>
+      
+      <div class="contactItem">
+        <label for="email">Votre email</label>
+        <input type="email" id="email" name="email" placeholder="Votre adresse mail" required>
+      </div>
+      
+      <div class="contactItem">
+        <label for="message">Votre message</label>
+        <textarea rows="10" id="message" name="message" placeholder="Votre message ici" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </div>
 
 
     <footer>
