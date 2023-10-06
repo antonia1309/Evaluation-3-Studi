@@ -1,8 +1,9 @@
-/* RESET */
+/****RESET****/
 a{
   text-decoration: none;
   color: inherit;
 }
+
 ul{
   list-style: none;
 }
@@ -13,26 +14,49 @@ ul{
   box-sizing: border-box;
 }
 
-/* GLOBAL */
+/****GLOBAL****/
 *{
   font-family: montserrat, sans-serif;
   color: white;
 }
+
 .Galerie-galeriePage, .Contact-contactPage, .Tarifs-tarifsPage {
   background-color: #B98332;
 }
+
 .tarifsTitle, .contactTitle, .galerieTitle {
   font-size: 2rem;
   text-align: center;
   margin-top: 30px;
 }
 
+/* NAVBAR */
+.text-custom-color{
+  color: white;
+}
+
+.nav-link:hover{
+  font-size: 1.2em;
+  color: white;
+}
+
+@media screen and (min-width: 1024px){
+  .nav-link:hover{
+    border-bottom: 2px solid white;
+  }
+
+  .nav-link{
+    transition: all 0.2s;
+  }
+}
 
 
-/* PAGE D ACCUEIL */
+/****PAGE D ACCUEIL****/
 .mainTitle{
   font-family: windsong, sans-serif;
+  font-size: 2.6em;
 }
+
 .mainPage{
   height: 100vh;
   display: flex;
@@ -41,15 +65,68 @@ ul{
   align-items: center;
   margin: 0 auto;
 }
+
+.mainPage p{
+  font-size: 1.3em;
+}
+
 .Accueil-accueilPage {
   background-image: url('/assets/fond.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
+  overflow: hidden;
 }
 
-/* PAGE TARIFS */
+/****PAGE GALERIE PHOTOS****/
+.items{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#gallery .active{
+  width: 34%;
+  padding: 10px;
+  transition: width  0.3s;
+}
+
+#gallery .inactive{
+  width: 0;
+  padding: 0;
+  transition: width  0.3s;
+}
+
+.items li{
+  color: white;
+  transition: 0.5s ease;
+  margin-right: 30px;
+  padding: 8px;
+  font-size: 1em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.items .active{
+  color: white;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+/****PAGE TARIFS****/
 .tarifs{
   background-color: white;
   border-radius: 10px;
@@ -62,24 +139,28 @@ ul{
   margin: 10px 60px;
   padding: 20px;
 }
+
 .tarifs p{
   color: black;
   font-size: 0.9em;
 }
+
 .tarifs p:nth-last-of-type(1){
   font-size: 1.2em;
   font-weight: 500;
 }
+
 .tarifs h2{
   font-size: 1.2em;
   font-weight: 500;
 } 
+
 .tarifsContent{
   display: flex;
   flex-direction: column;
   color: black;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1024px){
@@ -97,39 +178,25 @@ ul{
     width: 38%;
     height: 300px;
   }
+
   .tarifs p{
     color: black;
     font-size: 1.2em;
   }
+
   .tarifs p:nth-last-of-type(1){
     font-size: 1.8em;
     font-weight: 500;
   }
+
   .tarifs h2{
     font-size: 1.8em;
     font-weight: 500;
   } 
 }
 
-/* NAVBAR */
-.text-custom-color{
-  color: white;
-}
-.nav-link:hover{
-  font-size: 1.2em;
-  color: white;
-}
 
-@media screen and (min-width: 1024px){
-  .nav-link:hover{
-    border-bottom: 2px solid white;
-  }
-  .nav-link{
-    transition: all 0.2s;
-  }
-}
-
-/* FORMULAIRE */
+/****PAGE CONTACT****/
 form{
   display: flex;
   flex-direction: column;
@@ -139,6 +206,7 @@ form{
   height: 70vh;
   margin: 0 auto;
 }
+
 .contactItem{
   display: flex;
   flex-direction: column;
@@ -147,6 +215,7 @@ form{
   padding: 5px;
   margin: 5px;
 }
+
 input, textarea{
   border-radius: 8px;
   border: 1px solid black;
@@ -156,13 +225,20 @@ input, textarea{
   padding: 3px;
   width: 270px;
 }
+
 input{
   height: 30px;
 }
+
+input, textarea:focus{
+  outline: none;
+}
+
 label{
   font-size: 1em;
   font-weight: 200;
 }
+
 .btn{
   background-color: #B0B0B0;
   border-radius: 20px;
@@ -173,55 +249,34 @@ label{
   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 1em;
 }
+
 .btn:hover{
   background-color:rgb(125, 125, 125);
-  
 }
+
 @media screen and (min-width: 1024px) {
   input, textarea{
     font-size: 1em;
     padding: 3px;
     width: 350px;
   }
+
   label{
     font-size: 1.2em;
   }
+
   .btn{
     width: 350px;
+    margin-bottom: 20px;
   }
+
  form{
   height: 80vh;
  }
 }
 
-/* GALERIE PHOTOS */
-.items{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.item{
-  padding-right: 15px;
-  padding: 8px;
-  font-size: 1em;
-}
-.photo{
-  width: 34%;
-  /* height: 20vh; */
-  margin: 10px;
-}
-.photos{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-
-}
-
-/* FOOTER */
+/****FOOTER****/
 .social{
-  /* padding: 8px; */
   margin: 3px;
   position: fixed;
   bottom: 25px;
@@ -229,14 +284,14 @@ label{
   flex-direction: column;
   z-index: 100;
 }
+
 i{
   padding: 8px;
   font-size: 22px;
 }
+
 @media screen and (min-width: 1024px) {
   i{
     font-size: 35px;
   }
-  
-
 }
