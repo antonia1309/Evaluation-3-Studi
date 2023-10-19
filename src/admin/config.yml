@@ -6,7 +6,7 @@ media_folder: "public/assets"
 public_folder: "src/assets"
 
 collections:
-- name: "prices" # Used in routes, e.g., /admin/collections/blog
+  - name: "prices" # Used in routes, e.g., /admin/collections/blog
     label: "Tarif" # Used in the UI
     folder: "src/prices" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
