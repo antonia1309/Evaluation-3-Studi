@@ -1,0 +1,5 @@
+<div class="photos" id="gallery">
+  {% for galleries in collections.galleries %}
+  <img class="photo active" data-{{galleries.data.category}} src="/assets/{{galleries.data.name}}.jpg" alt="{{galleries.data.name}}" >
+  {% endfor %}
+</div>

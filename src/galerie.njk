@@ -3,65 +3,12 @@ title: Galerie
 metaDescription: Charles Cantin, photographe, mon portfolio
 layout: layout.njk
 backgroundClass: galeriePage
-votre_galerie:
-- categorie:
-  - bapteme
-  photo: "/assets/bapteme-1.jpg"
-- categorie:
-  - bapteme
-  photo: "/assets/bapteme-2.jpg"
-- categorie:
-  - bebe
-  photo: "/assets/bebe-1.jpg"
-- categorie:
-  - bebe
-  photo: "/assets/bebe-2.jpg"
-- categorie:
-  - bebe
-  photo: "/assets/bebe-3.jpg"
-- categorie:
-  - bebe
-  photo: "/assets/bebe-4.jpg"
-- categorie:
-  - couple
-  photo: "/assets/couple-1.jpg"
-- categorie:
-  - couple
-  photo: "/assets/couple-2.jpg"
-- categorie:
-  - famille
-  photo: "/assets/famille-2.jpg"
-- categorie:
-  - famille
-  photo: "/assets/famille-3.jpg"
-- categorie:
-  - famille
-  photo: "/assets/famille-1.jpg"
-- categorie:
-  - mariage
-  photo: "/assets/mariage-1.jpg"
-- categorie:
-  - mariage
-  photo: "/assets/mariage-2.jpg"
-- categorie:
-  - mariage
-  photo: "/assets/mariage-3.jpg"
-- categorie:
-  - portrait
-  photo: "/assets/portrait-1.jpg"
-- categorie:
-  - portrait
-  photo: "/assets/portrait-2.jpg"
-- categorie:
-  - grossesse
-  photo: "/assets/grossesse-2.jpg"
-- categorie:
-  - grossesse
-  photo: "/assets/grossesse-1.jpg"
+permalink : /galerie/
+
 ---
 <div>
   <h1 class="galerieTitle"> Galerie photos </h1>
-    <ul class="items" id="filters">
+  <ul class="items" id="filters">
       <li class="item active" id="tout">Tout</li>
       <li class="item" id="mariage">Mariage</li>
       <li class="item" id="famille">Famille</li>
@@ -71,25 +18,6 @@ votre_galerie:
       <li class="item" id="grossesse">Grossesse</li>
       <li class="item" id="portrait">Portrait</li>
     </ul>
-    <div class="photos" id="gallery">
-      <img class="photo active" data-{{votre_galerie[0].categorie}} src="{{votre_galerie[0].photo}}" alt="photo" >
-      <img class="photo active" data-{{votre_galerie[1].categorie}} src="{{votre_galerie[1].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[2].categorie}} src="{{votre_galerie[2].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[3].categorie}} src="{{votre_galerie[3].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[4].categorie}} src="{{votre_galerie[4].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[5].categorie}} src="{{votre_galerie[5].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[6].categorie}} src="{{votre_galerie[6].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[7].categorie}} src="{{votre_galerie[7].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[8].categorie}} src="{{votre_galerie[8].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[9].categorie}} src="{{votre_galerie[9].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[10].categorie}} src="{{votre_galerie[10].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[11].categorie}} src="{{votre_galerie[11].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[12].categorie}} src="{{votre_galerie[12].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[13].categorie}} src="{{votre_galerie[13].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[14].categorie}} src="{{votre_galerie[14].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[15].categorie}} src="{{votre_galerie[15].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[16].categorie}} src="{{votre_galerie[16].photo}}" alt="photo">
-      <img class="photo active" data-{{votre_galerie[17].categorie}} src="{{votre_galerie[17].photo}}" alt="photo">
-
-    </div>
+   
+   {% include "gallery.njk" %}
 </div>
