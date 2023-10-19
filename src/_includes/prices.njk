@@ -1,0 +1,9 @@
+{% for price in prices %}
+    <div class="tarifs">
+          <h2>{{ price.data.title }}</h2> 
+          <p>{{ price.data.description }} <br>
+            {{ price.data.description2 }}
+          </p>
+          <p>{{ price.data.price }} </p>
+    </div>
+  {% endfor %}
