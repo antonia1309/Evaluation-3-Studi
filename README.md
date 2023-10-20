@@ -15,6 +15,8 @@ Les documents annexes sont disponibles dans le dossier "annexes" :
 Le maquettage a été réalisé sur Figma.
 Il est visible à cette adresse : https://www.figma.com/file/jWYUfCqXwmuelM1woK1Nf4/Maquette-Charles-Cantin?type=design&node-id=0-1&mode=design&t=NCuFvEPWg3Z40Yol-0
 
+Lien du site: https://charles-cantin-portfolio33.netlify.app/
+
 ## Eleventy
 
 1. Eleventy v2.0.1 nécessite Node.js.Vous pouvez vérifier si Node est installé ou non en l’exécutant `node -v` dans une fenêtre de terminal.
