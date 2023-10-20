@@ -6,7 +6,7 @@ Pour cette évaluation d'entraînement qui est essentiellement axée sur le Dé
 
 Le site devait contenir 4 pages (accueil, galerie, tarifs et contact).
 
-L'intérêt de cet exercice a été d'utiliser un générateur de site statique, j'ai donc choisi Eleventy que j'ai couplé à un CMS headless tel que NetlifyCMS. Cela afin que le propriétaire du site puisse effectuer par la suite lui-même les modifications qu'il souhaite.
+L'intérêt de cet exercice a été d'utiliser un générateur de site statique, j'ai donc choisi Eleventy que j'ai couplé à un CMS headless tel que NetlifyCMS. Cela afin de permettre au propriétaire du site d’ effectuer lui-même les modifications qu'il souhaite.
 
 Les documents annexes sont disponibles dans le dossier "annexes" :
 
